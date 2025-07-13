@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import {
   doc,
-  getDoc,
   setDoc,
   collection,
   addDoc,
@@ -19,7 +18,6 @@ export default function Caja() {
   const { usuario } = useAuth();
   const [caja, setCaja] = useState(null);
   const [movimientos, setMovimientos] = useState([]);
-  const [ventas, setVentas] = useState([]);
   const [montoInicial, setMontoInicial] = useState(0);
   const [montoMovimiento, setMontoMovimiento] = useState(0);
   const [descripcion, setDescripcion] = useState("");
@@ -195,8 +193,6 @@ export default function Caja() {
             />
             <button onClick={registrarMovimiento}>Registrar</button>
           </div>
-
-          
         </div>
       )}
 
