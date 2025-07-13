@@ -5,7 +5,7 @@ import {
   query,
   orderBy,
   getDocs,
-  doc,
+  
 } from "firebase/firestore";
 import { useAuth } from "../context/AuthContext";
 
